@@ -1,0 +1,27 @@
+[submodule "lews-twitter-collector"]
+	path = lews-twitter-collector
+	url = git@github.com:ncl-iot-team/lews-twitter-collector.git
+[submodule "pipeline-module-template"]
+	path = pipeline-module-template
+	url = git@github.com:ncl-iot-team/pipeline-module-template.git
+[submodule "geo-lookup-pipeline-module"]
+	path = geo-lookup-pipeline-module
+	url = git@github.com:ncl-iot-team/geo-lookup-pipeline-module.git
+[submodule "user-classification"]
+	path = user-classification
+	url = git@github.com:ncl-iot-team/user-classification.git
+[submodule "lews-classifier"]
+	path = lews-classifier
+	url = git@github.com:ncl-iot-team/lews-classifier.git
+[submodule "lews-ui"]
+	path = lews-ui
+	url = git@github.com:ncl-iot-team/lews-ui.git
+[submodule "lews-twitter-webfeed"]
+	path = lews-twitter-webfeed
+	url = git@github.com:ncl-iot-team/lews-twitter-webfeed.git
+[submodule "photon-docker"]
+	path = photon-docker
+	url = git@github.com:ncl-iot-team/photon-docker.git
+[submodule "py-kafka-es-injector"]
+	path = py-kafka-es-injector
+	url = git@github.com:ncl-iot-team/py-kafka-es-injector.git
