@@ -25,3 +25,6 @@
 [submodule "py-kafka-es-injector"]
 	path = py-kafka-es-injector
 	url = git@github.com:ncl-iot-team/py-kafka-es-injector.git
+[submodule "ONTODIAS"]
+	path = ONTODIAS
+	url = git@github.com:ncl-iot-team/ONTODIAS.git
