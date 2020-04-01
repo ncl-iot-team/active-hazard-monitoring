@@ -1,0 +1,2010 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#"
+     xml:base="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#contributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#contributes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasDataSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasDataSource">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isDataSourceFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasDataSourceMetadata -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasDataSourceMetadata">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasFoI -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasFoI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#FoI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasIndicator">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isIndicationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasInfrastructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasInfrastructure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasMetadataProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasMetadataProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasNaturalResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasNaturalResource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasObservation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isObservationFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasObservedProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasObservedProperty">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isObservedPropertyFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasObservedPropertyProfile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasObservedPropertyProfile">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservationProfile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasPlace">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#locatesIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasProfile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasUtility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasUtility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasWarningSign -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#hasWarningSign">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isWarningSignFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isDataSourceFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isDataSourceFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isIndicationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isIndicationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isObservationFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isObservationFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isObservedPropertyFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isObservedPropertyFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isWarningSignFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#isWarningSignFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#livesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#livesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#locatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#locatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#measures -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#measures"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#observes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#observes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#represent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#represent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#triggers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#address"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#collection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#collection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#column -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#column">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dbname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dbname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#eventList -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#eventList">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#featureList -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#featureList">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#featureOfInterest -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#featureOfInterest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#namenode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#namenode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#observedPropertyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#observedPropertyName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#observedPropertyType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#observedPropertyType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#password"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#path -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#path">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#phenomenonBeginTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#phenomenonBeginTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#phenomenonEndTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#phenomenonEndTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#platform -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#port -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#port"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#procedure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#procedure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#providerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#providerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ProviderProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensorType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensorType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#serviceAdapter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#serviceAdapter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#serviceProvider -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#serviceProvider">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#serviceType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#serviceType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#serviceURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#serviceURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#table -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#table">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#timeInstanceOrPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#timeInstanceOrPeriod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#username -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#username"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#where -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#where">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AgriculturalPracticeChange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AgriculturalPracticeChange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AirPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AirPressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AirTemperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AirTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#BrokenUndergroundUtility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#BrokenUndergroundUtility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#BulgeOnGround -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#BulgeOnGround">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ChemicalExplosion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ChemicalExplosion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnConcreteFloor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnConcreteFloor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnSideWalk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnSideWalk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnStreet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnStreet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnWall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnWall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackonBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackonBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DrainageAndDewatering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DrainageAndDewatering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Drought -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Drought">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#EarthQuake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#EarthQuake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#EarthQuakeMagnitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#EarthQuakeMagnitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Expert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Expert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ExtremeTemperatureCold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ExtremeTemperatureCold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ExtremeTemperatureHot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ExtremeTemperatureHot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Flat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Flat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Flood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Flood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#FoI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#FoI"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GeoLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GeoLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GroundCollapse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GroundCollapse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GroundHeave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GroundHeave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#HailStorm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#HailStorm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PublicPlace"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#House">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#HumanSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#HumanSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PhysicalSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Humidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Humidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ImpactEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ImpactEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InSitu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InSitu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PhysicalSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#IncreaseInWaterLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#IncreaseInWaterLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfilledGround -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfilledGround">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfrastructureConstruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfrastructureConstruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfrastructureLoading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfrastructureLoading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Lake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Lake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Landslide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Landslide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LandslideProneArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LandslideProneArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LeaningElectronicPole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LeaningElectronicPole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LeaningTelephonePole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LeaningTelephonePole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Lightning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Lightning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#MaterialFluidInjection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#MaterialFluidInjection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#MobileApp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#MobileApp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#HumanSensor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SocialMedia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Mountain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Mountain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NewclearExplostion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NewclearExplostion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservationProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservationProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#OilGasExtraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#OilGasExtraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PhysicalSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PhysicalSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ProviderProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ProviderProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PublicPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PublicPlace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#QuarryingSerfaceMining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#QuarryingSerfaceMining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Road"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Rain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Rain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#RegionalSubsidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#RegionalSubsidence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ReservoirAndDamConstruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ReservoirAndDamConstruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Residence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Residence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Resident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Resident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#River -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#River">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Road -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Road">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Rockfall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Rockfall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Landslide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PublicPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SeismicWave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SeismicWave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SnowAvalanche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SnowAvalanche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SnowStorm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SnowStorm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SocialMedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SocialMedia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#HumanSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SocialMediaUser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SocialMediaUser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilLocalSubsidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilLocalSubsidence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilMoisture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilMoisture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilMovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilMovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Storm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Storm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SubsurfaceInfrastructureConstruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SubsurfaceInfrastructureConstruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SubsurfaceMining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SubsurfaceMining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#TapwaterColorChanged -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#TapwaterColorChanged">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Tide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Tide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Tsunami -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Tsunami">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Urbanisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Urbanisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#VegetationRemoval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#VegetationRemoval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#VolcanicEruption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#VolcanicEruption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WaterAddition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WaterAddition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Waterfall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Waterfall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Wildfire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Wildfire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WindSpeed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WindSpeed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#crack_on_sideWalk_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#crack_on_sideWalk_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnSideWalk"/>
+        <isWarningSignFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#crack_on_wall_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#crack_on_wall_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnWall"/>
+        <isWarningSignFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dataSource_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dataSource_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PhysicalSensor"/>
+        <hasDataSourceMetadata rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_1"/>
+        <isDataSourceFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#soil_moisture_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dataSource_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dataSource_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PhysicalSensor"/>
+        <hasDataSourceMetadata rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_2"/>
+        <isDataSourceFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#soil_movement_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dataSource_22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dataSource_22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+        <hasDataSourceMetadata rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_4"/>
+        <isDataSourceFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#temperature_22"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dataSource_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#dataSource_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PhysicalSensor"/>
+        <hasDataSourceMetadata rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_3"/>
+        <isDataSourceFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#rain_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_11"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_1"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_1"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_12"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_1"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_1"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_21"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_2"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_2"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_23"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ds_metadata_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_22"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_4"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_22"/>
+        <hasProfile rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_22"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#flood_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#flood_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Flood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#flood_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#flood_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Flood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#foi_Karela_bbox_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#foi_Karela_bbox_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#FoI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#foi_Karela_bbox_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#foi_Karela_bbox_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#FoI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Landslide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Landslide"/>
+        <triggers rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#leaning_telephone_pole_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#leaning_telephone_pole_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LeaningTelephonePole"/>
+        <isWarningSignFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#flood_1"/>
+        <isWarningSignFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+        <hasFoI rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#foi_Karela_bbox_1"/>
+        <isObservationFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#landslide_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+        <hasFoI rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#foi_Karela_bbox_2"/>
+        <isObservationFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#flood_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+        <featureOfInterest>foi_karela_bbox_1</featureOfInterest>
+        <observedPropertyName>soil_moisture_1</observedPropertyName>
+        <observedPropertyType>SoilMoisture</observedPropertyType>
+        <phenomenonBeginTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-01-01T00:00:00</phenomenonBeginTime>
+        <phenomenonEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-21T00:00:00</phenomenonEndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+        <featureOfInterest>foi_karela_bbox_1</featureOfInterest>
+        <observedPropertyName>soil_movement_1</observedPropertyName>
+        <observedPropertyType>SoilMovement</observedPropertyType>
+        <phenomenonBeginTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-01-01T00:00:00</phenomenonBeginTime>
+        <phenomenonEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-21T00:00:00</phenomenonEndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedPropertyProfile"/>
+        <featureOfInterest>foi_karela_bbox_2</featureOfInterest>
+        <observedPropertyName>rain_1</observedPropertyName>
+        <observedPropertyType>Rain</observedPropertyType>
+        <phenomenonBeginTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-01-01T00:00:00</phenomenonBeginTime>
+        <phenomenonEndTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-07-21T00:00:00</phenomenonEndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_profile_22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservationProfile"/>
+        <featureOfInterest>foi_karela_bbox_2</featureOfInterest>
+        <observedPropertyName>temperature_22</observedPropertyName>
+        <observedPropertyType>Temperature</observedPropertyType>
+        <phenomenonBeginTime>2019-01-01T00:00:00</phenomenonBeginTime>
+        <phenomenonEndTime>2019-12-31T00:00:00</phenomenonEndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ProviderProfile"/>
+        <providerName>Amrita</providerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ProviderProfile"/>
+        <providerName>BGS</providerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ProviderProfile"/>
+        <providerName>MetOffice</providerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#provider_profile_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ProviderProfile"/>
+        <providerName>BGS</providerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#rain_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#rain_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Rain"/>
+        <isObservedPropertyFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <eventList>Landslide</eventList>
+        <featureList>foi_karela_bbox_1</featureList>
+        <sensorType>in-situ</sensorType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <eventList>Landslide</eventList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <eventList>Flood</eventList>
+        <featureOfInterest>foi_karela_bbox_1</featureOfInterest>
+        <sensorType>in-situ</sensorType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#sensor_profile_22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+        <eventList>Flood</eventList>
+        <featureOfInterest>foi_karela_bbox_1</featureOfInterest>
+        <sensorType>in-situ</sensorType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <column>*</column>
+        <dbname>mysql</dbname>
+        <serviceAdapter>Rest_adaptor_11</serviceAdapter>
+        <serviceProvider>Amrita</serviceProvider>
+        <serviceType>REST</serviceType>
+        <serviceURL>http://127.0.0.1/rest/moisture</serviceURL>
+        <table>NorthSlopHigherRawData</table>
+        <where></where>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <collection>BGS-north-slope-higher_raw_data</collection>
+        <column>*</column>
+        <dbname>mogodb</dbname>
+        <serviceAdapter>Rest_adaptor_12</serviceAdapter>
+        <serviceProvider>Amrita</serviceProvider>
+        <serviceType>REST</serviceType>
+        <serviceURL>http://127.0.0.1/rest/moisture</serviceURL>
+        <where></where>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <address>localhost</address>
+        <collection>NorthSlopMiddleRawData</collection>
+        <password>root</password>
+        <port rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27017</port>
+        <serviceType>mongodb</serviceType>
+        <username>root</username>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <namenode>localhost</namenode>
+        <path>/data/BGS_north_slope_lower.csv</path>
+        <port rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</port>
+        <sensorType>hdfs</sensorType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <dbname>hdfs</dbname>
+        <path>img/1.jpg,img/2.jpg,img/3.jpg,video/1.mp4, video/2.mp4</path>
+        <serviceAdapter>Rest_adaptor_21</serviceAdapter>
+        <serviceProvider>MetOffice</serviceProvider>
+        <serviceType>REST</serviceType>
+        <serviceURL>http://127.0.0.1/rest/moisture</serviceURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <address>localhost</address>
+        <dbname>NorthSlopHigherRawData</dbname>
+        <password>Landslip@2020</password>
+        <port rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3306</port>
+        <serviceType>mysql</serviceType>
+        <username>landslip</username>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#service_profile_23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+        <path>/data/map/demo/</path>
+        <platform>hdfs</platform>
+        <serviceType>gdal</serviceType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#soil_moisture_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#soil_moisture_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilMoisture"/>
+        <isObservedPropertyFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#soil_movement_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#soil_movement_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilMovement"/>
+        <isObservedPropertyFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#temperature_22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#temperature_22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Temperature"/>
+        <isObservedPropertyFor rdf:resource="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#obs_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AgriculturalPracticeChange"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ChemicalExplosion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DrainageAndDewatering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfilledGround"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfrastructureConstruction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#InfrastructureLoading"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#MaterialFluidInjection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NewclearExplostion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#OilGasExtraction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#QuarryingSerfaceMining"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ReservoirAndDamConstruction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SubsurfaceInfrastructureConstruction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SubsurfaceMining"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Urbanisation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#VegetationRemoval"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WaterAddition"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AirPressure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AirTemperature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#EarthQuakeMagnitude"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Humidity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Rain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SeismicWave"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilMoisture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilMovement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Tide"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WindSpeed"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#FoI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GeoLocation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservationProfile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SensorProfile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ServiceProfile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#WarningSign"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#FoI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GeoLocation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#FoI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSourceMetadata"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#DataSource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ObservedProperty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#UrbanArea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#AnthropogenicProcess"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalHazard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#NaturalResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Utility"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#BrokenUndergroundUtility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#BulgeOnGround"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnConcreteFloor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnSideWalk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnStreet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackOnWall"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#CrackonBuilding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#IncreaseInWaterLevel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LeaningElectronicPole"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#LeaningTelephonePole"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#TapwaterColorChanged"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Drought"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#EarthQuake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ExtremeTemperatureCold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ExtremeTemperatureHot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Flood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GroundCollapse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#GroundHeave"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#HailStorm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#ImpactEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Landslide"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Lightning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#RegionalSubsidence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SnowAvalanche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SnowStorm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SoilLocalSubsidence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Storm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Tsunami"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#VolcanicEruption"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Wildfire"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Expert"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Resident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#SocialMediaUser"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Flat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#House"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#PublicPlace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Residence"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Lake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Mountain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#River"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ncl/ontologies/2018/6/landslip#Waterfall"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
